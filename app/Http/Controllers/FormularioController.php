@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactoRequest;
+Use File;
 
 class FormularioController extends Controller
 {
@@ -33,8 +35,15 @@ class FormularioController extends Controller
         return view('formulario4');
     }
 
-    function formularioValidar(Request $request){
-        $validateData = $request->validate
+    function formularioValidar(ContactoRequest $request){
+        
+        return view('formulariorecoje4')->with('nombre',
+        $request->input('nombre'))->with('apellido',
+        $request->input('apellido'))->with('email',
+        $request->input('email'))->with('telefono',
+        $request->input('telefono'));
     }
+
+    
 
 }

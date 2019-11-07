@@ -90,6 +90,7 @@
                     <a href="/blog2/1/David">Blog2</a>
                     <a href="{{route('Formulario')}}">Formulario4.1</a>
                     <a href="{{route('Formulario2')}}">Formulario4.2</a>
+                    <a href="{{route('Formulario4')}}">Formulario4.4</a>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@
 </head>
 <body>
 <form action="{{route('FormularioR')}}" method="get">
+    @csrf
     Nombre: <input type="text" name="nombre"><br>
     Apellido: <input type="text" name="apellido"><br>
     <input type="submit" value="Enviar">

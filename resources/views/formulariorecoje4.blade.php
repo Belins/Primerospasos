@@ -4,13 +4,11 @@
 	<title></title>
 </head>
 <body>
-<form action="{{route('FormularioR2')}}" method="post">
-    Nombre: <input type="text" name="nombre"><br>
-    Apellido: <input type="text" name="apellido"><br>
-    Email: <input type="text" name="email"><br>
-    Teléfono: <input type="text" name="telefono"><br>
-    <input type="submit" value="Enviar">
-</form>
+<h1>Has creado un nuevo contacto</h1>
+<p>Nombre: {{$nombre}}</p>
+<p>Apellido: {{$apellido}}</p>
+<p>Email: {{$email}}</p>
+<p>Telefono: {{$telefono}}</p>
 
 </body>
 </html>

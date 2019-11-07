@@ -39,5 +39,5 @@ Route::get('/formulario2', 'FormularioController@getFormulario2')->name('Formula
 Route::get('/formulario/formulariorecoje', 'FormularioController@getResultado')->name('FormularioR');
 Route::post('/formulario/formulariorecoje2', 'FormularioController@getResultado2')->name('FormularioR2');
 
-Route::post('/formulario/formulario4', 'FormularioController@getFormulario4')->name('Formulario4');
-Route::post('/formulario/formulariorecoje4', 'FormularioController@formularioValidar')->name('FormularioR4');
+Route::get('/formulario4', 'FormularioController@getFormulario4')->name('Formulario4');
+Route::post('/formulario4/formulariorecoje4', 'FormularioController@formularioValidar')->name('FormularioR4');
