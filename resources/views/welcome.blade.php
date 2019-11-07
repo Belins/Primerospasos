@@ -88,14 +88,8 @@
                     <a href="/contacto">Contacto</a>
                     <a href="/blog/1">Blog</a>
                     <a href="/blog2/1/David">Blog2</a>
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('Formulario')}}">Formulario4.1</a>
+                    <a href="{{route('Formulario2')}}">Formulario4.2</a>
                 </div>
             </div>
         </div>
