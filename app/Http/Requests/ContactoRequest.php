@@ -26,8 +26,8 @@ class ContactoRequest extends FormRequest
         return [
             'nombre'=>'required|min:2|max:15',
             'apellido'=>'required|min:2|max:20',
-            'email' => 'required|email'
-            //'telefono'=> 'regex: {69}{}'
+            'email' => 'required|email',
+            'telefono' => 'regex:/[679][0-9]{8}/'
         ];
     }
 }

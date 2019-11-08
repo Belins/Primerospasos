@@ -9,6 +9,6 @@
 <p>Apellido: {{$apellido}}</p>
 <p>Email: {{$email}}</p>
 <p>Telefono: {{$telefono}}</p>
-
+<p>DNI: {{$dni}}</p>
 </body>
 </html>

@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactoRequest;
-Use File;
+use App\Rules\dni;
+use File;
+
 
 class FormularioController extends Controller
 {
@@ -37,11 +39,17 @@ class FormularioController extends Controller
 
     function formularioValidar(ContactoRequest $request){
         
+        $validateData = $request->validate([
+            'dni' => ['required','regex:/^[a-zA-Z0-9]{5,10}$/', new dni] 
+        ]);
+        
+
         return view('formulariorecoje4')->with('nombre',
         $request->input('nombre'))->with('apellido',
         $request->input('apellido'))->with('email',
         $request->input('email'))->with('telefono',
-        $request->input('telefono'));
+        $request->input('telefono'))->with('dni',
+        $request->input('dni'));
     }
 
     

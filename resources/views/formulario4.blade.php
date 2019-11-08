@@ -12,7 +12,10 @@
     <h3>{{$errors->first('apellido')}}</h3>@endif
     Email: <input type="text" name="email" value="{{old('email')}}"><br>@if ($errors->has('email'))
     <h3>{{$errors->first('email')}}</h3>@endif
-    Teléfono: <input type="text" name="telefono" value="{{old('telefono')}}"><br>
+    Teléfono: <input type="text" name="telefono" value="{{old('telefono')}}"><br>@if ($errors->has('telefono'))
+    <h3>{{$errors->first('telefono')}}</h3>@endif
+    dni: <input type="text" name="dni" value="{{old('dni')}}"><br>@if ($errors->has('dni'))
+    <h3>{{$errors->first('dni')}}</h3>@endif
     <input type="submit" value="Enviar">
 </form>
 
